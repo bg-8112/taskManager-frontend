@@ -1,0 +1,42 @@
+.task-board-columns {
+  display: flex;
+  gap: 20px;
+}
+.task-board-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.task-card {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 auto; /* Ensure all cards shrink and grow at the same rate */
+}
+
+.task-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task-card h3 {
+  margin-top: 0;
+}
+.task-card p {
+  margin: 5px 0;
+}
+.task-card.to-do {
+  border-left: 5px solid #ffedb5;
+}
+.task-card.in-progress {
+  border-left: 5px solid #aad3ff; 
+}
+.task-card.to-review {
+  border-left: 5px solid #ffddaa; 
+}
+.task-card.complete {
+  border-left: 5px solid #9bd9a9; 
+}

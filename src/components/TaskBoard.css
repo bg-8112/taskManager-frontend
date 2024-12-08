@@ -1,0 +1,47 @@
+.task-board {
+  padding: 30px 20px;
+}
+
+.task-board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.task-board h2 {
+  margin: 0;
+}
+.boardTitle{
+  color: #295058;
+}
+
+.task-board-columns {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.task-board-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+  border-radius: 4px;
+  gap: 5px;
+}
+
+.task-board-column.to-do {
+  background-color: #cedddf;
+}
+.task-board-column.in-progress {
+  background-color: #cedddf;
+}
+.task-board-column.to-review {
+  background-color: #cedddf;
+}
+.task-board-column.completed {
+  background-color: #cedddf;
+}
+.task-board-column h3 {
+  margin-bottom: 10px;
+}
